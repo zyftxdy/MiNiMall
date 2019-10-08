@@ -1,4 +1,8 @@
+<<<<<<< HEAD:pages/profile/profile.js
 // pages/profile/profile.js
+=======
+// pages/category/category.js
+>>>>>>> f8e71013eac84f098d47d6f4f34802b8396365b5:pages/category/category.js
 Page({
 
   /**

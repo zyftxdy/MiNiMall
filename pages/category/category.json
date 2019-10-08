@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "usingComponents": {
     "z-menu":"./childs/z-menu/z-menu",
     "z-content":"./childs/z-content/z-content"
   },
   "navigationBarTitleText": "分类"
+=======
+  "usingComponents": {},
+  "navigationBarTitleText": "商品分类",
+  "enablePullDownRefresh": true
+>>>>>>> f8e71013eac84f098d47d6f4f34802b8396365b5
 }

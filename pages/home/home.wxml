@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
+<<<<<<< HEAD
 <import src="../../telpmate/loading/loading.wxml" />
 <view class="home">
   <scroll-view class="content" 
@@ -20,3 +21,7 @@
     <z-backTop wx:if="{{showBackTop}}" bindtap="onBackTop" />
   </scroll-view>
 </view>
+=======
+<text class="title">{{name + '啦啦啦'}}</text>
+<button size="mini">点我</button>
+>>>>>>> f8e71013eac84f098d47d6f4f34802b8396365b5

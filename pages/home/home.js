@@ -12,6 +12,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+<<<<<<< HEAD
     banners:[],
     recommends:[],
     goods:{
@@ -26,6 +27,9 @@ Page({
     topPosition:0,
     tabControlTop:0,
     isFixed:false
+=======
+    name:'Hello World'
+>>>>>>> f8e71013eac84f098d47d6f4f34802b8396365b5
   },
 
   /**

@@ -1,0 +1,11 @@
+<!--pages/cart/childs/z-bottomBar/z-bottomBar.wxml-->
+<view class='bottom-bar'>
+  <view class='check-box'>
+    <z-checkIcon bindtap="selectAll" icon="icon" isChecked="{{selected}}"/>
+    <view>全选</view>
+  </view>
+  <view class='counter'>
+    总计: <text>¥{{price}}</text>
+  </view>
+  <view class='payment'>去计算({{counter}})</view>
+</view>

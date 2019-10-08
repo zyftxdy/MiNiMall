@@ -1,0 +1,8 @@
+<!--pages/category/childs/z-menu/z-menu.wxml-->
+<scroll-view class="menu" scroll-y="{{true}}">
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class='item {{index == currentIndex ? "active": ""}}' bindtap='onItemClick' data-index="{{index}}">
+      {{item.title}}
+    </view>
+  </block>
+</scroll-view>

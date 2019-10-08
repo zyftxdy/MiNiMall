@@ -1,0 +1,46 @@
+/* pages/cart/childs/z-bottomBar/z-bottomBar.wxss */
+.bottom-bar {
+  height: 90rpx;
+  background: #fff;
+  padding-left: 30rpx;
+  box-shadow: 0 -2px 2px rgba(0, 0, 0, .1);
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.check-box {
+  display: flex;
+  width: 150rpx;
+  align-items: center;
+}
+
+.counter {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.counter text{
+  color: #ff4500;
+}
+
+.payment {
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #ff4500;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 45rpx;
+  margin-right: 30rpx;
+}
+
+.icon {
+  margin-right: 10rpx;
+}

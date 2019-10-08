@@ -1,0 +1,29 @@
+/* pages/category/childs/z-content/z-content.wxss */
+
+.content {
+  height: 100%;
+}
+
+.subcategory {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  padding: 30rpx;
+}
+
+.item {
+  width: 30%;
+  text-align: center;
+  padding: 8rpx;
+}
+
+.item image{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.item .title{
+  font-size: 28rpx;
+  margin: 8rpx 0;
+}

@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view id="detail">
+  <scroll-view class="detail" scroll-y="true">
+    <z-swiper images="{{topImages}}" class="d-swiper"/>
+    <z-baseInfo baseInfo="{{baseInfo}}" />
+    <z-shopInfo shopInfo="{{shopInfo}}"/>
+    <z-detailInfo detailInfo="{{detailInfo}}"/>
+    <z-paramInfo paramInfo="{{paramInfo}}"/>
+    <z-commentInfo commentInfo="{{commentInfo}}"/>
+    <view class="recommends">商品推荐</view>
+    <z-goods goodsList="{{recommends}}"/>
+  </scroll-view>
+  <z-bottomBar bind:addCart="addCart"/>
+</view>

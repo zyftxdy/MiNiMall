@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tab-control": "/Components/z-tab-control/z-tab-control",
+    "z-goods": "/Components/z-goods/z-goods",
+    "z-backTop": "/Components/z-backTop/z-backTop"
+  }
+}

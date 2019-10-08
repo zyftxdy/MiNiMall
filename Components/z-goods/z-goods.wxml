@@ -1,0 +1,16 @@
+<!--Components/z-goods/z-goods.wxml-->
+<view class="goods">
+  <block wx:for="{{goodsList}}" wx:key="{{index}}">
+    <view class="goods-item" bindtap="itemClick" data-id="{{item.iid}}">
+      <image src="{{item.image || item.img || item.show.img}}" mode="widthFix"/>
+      <view class="desc-info">
+        <view class='title'>{{item.title}}</view>
+        <view class="info">
+          <text class='price'>¥{{item.price}}</text>
+          <image class='icon' src="/assets/images/common/favor.png"/>
+          <text class='cfav'>{{item.cfav}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

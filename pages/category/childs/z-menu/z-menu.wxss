@@ -1,0 +1,25 @@
+/* pages/category/childs/z-menu/z-menu.wxss */
+.menu {
+  height: 100%;
+  font-size: 32rpx;
+  background: #f6f6f6;
+}
+/**隐藏滚动条**/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background:  #f6f6f6;
+}
+
+.active {
+  color: #f55777;
+  font-weight: 700;
+  background: #fff;
+  border-left: 6rpx solid #f55777;
+}

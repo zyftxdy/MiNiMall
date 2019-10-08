@@ -1,0 +1,4 @@
+/* pages/home/child/z-feature/z-feature.wxss */
+.feature image{
+  width: 100%
+}

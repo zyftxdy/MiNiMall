@@ -1,0 +1,15 @@
+<!--Components/z-swiper/z-swiper.wxml-->
+<swiper indicator-dots='true' 
+        indicator-color="rgb(0,0,0,.2)"
+        indicator-active-color='#ff5777'
+        autoplay='true'
+        circular='true'
+        interval='2000'
+        easing-function='easeInOutCubic'
+        class='swiper'>
+  <block wx:for="{{images}}" wx:key="index">
+    <swiper-item>
+      <image class="swiper-image" src="{{item}}" mode='widthFix'/>
+    </swiper-item>
+  </block>
+</swiper>

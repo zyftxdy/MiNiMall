@@ -1,3 +1,22 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">点我</button>
+<import src="../../telpmate/loading/loading.wxml" />
+<view class="home">
+  <scroll-view class="content" 
+    scroll-y="true" 
+    bindscrolltolower="loadMore" 
+    scroll-with-animation="true" 
+    scroll-top="{{topPosition}}" 
+    bindscroll="scrollPosition">
+    <z-search-bar/>
+    <z-swiper images="{{banners}}" />
+    <z-recommend recommends="{{recommends}}" bind:imageLoad="onImageLoad"/>
+    <z-feature/>
+    <tab-control class="{{isFixed? 'fixed': ''}}" id="tab-control" titles="{{titles}}" bind:tabClick="tabClick" />
+    <tab-control  titles="{{titles}}" bind:tabClick="tabClick" wx:if="{{isFixed}}"/>
+    <z-goods goodsList="{{goods[currentType].list}}" />
+    <view hidden="{{loadingShow}}">
+      <template is="loading" />
+    </view>
+    <z-backTop wx:if="{{showBackTop}}" bindtap="onBackTop" />
+  </scroll-view>
+</view>

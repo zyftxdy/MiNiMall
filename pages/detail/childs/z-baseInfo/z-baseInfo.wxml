@@ -1,0 +1,33 @@
+<!--pages/detail/childs/z-baseInfo/z-baseInfo.wxml-->
+<view class="baseInfo">
+  <view class="title">{{baseInfo.title}}</view>
+  <view class="price">
+    <text class='new-price'>{{baseInfo.newPrice}}</text>
+    <text class='old-price'>{{baseInfo.oldPrice}}</text>
+    <text class='discount'>{{baseInfo.discount}}</text>
+  </view>
+  <view class='sell-info'>
+    <block wx:for="{{baseInfo.columns}}" wx:key="index">
+      <view class='sell-item'>{{item}}</view>
+    </block>
+  </view>
+  <view class="extra">
+    <text>发货</text>
+    <view class="sendAddress">
+      <image src="/assets/images/common/address.png"/>
+      <text>{{baseInfo.extra.sendAddress}}</text>
+    </view>
+    <view class="deliveryTime">{{baseInfo.extra.deliveryTime}}小时内发货</view>
+  </view>
+  <view class='service'>
+    <block wx:for="{{baseInfo.services}}" wx:key="index">
+      <!-- 延误必赔是否显示? -->
+      <block wx:if="{{index !== 0}}">
+        <view class='service-item'>
+          <image class='icon' src="{{item.icon}}" />
+          <text class='name'>{{item.name}}</text>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>

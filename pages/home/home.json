@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tab-control":"/Components/z-tab-control/z-tab-control",
+    "z-swiper":"/Components/z-swiper/z-swiper",
+    "z-goods":"/Components/z-goods/z-goods",
+    "z-backTop":"/Components/z-backTop/z-backTop",
+    "z-recommend":"./child/z-recommend/z-recommend",
+    "z-feature":"./child/z-feature/z-feature",
+    "z-search-bar":"/Components/z-search-bar/z-search-bar"
+  },
+  "navigationStyle": "default"
 }
